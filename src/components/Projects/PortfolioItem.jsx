@@ -1,7 +1,7 @@
 function PortfolioItem({ title, imgUrl, stack, link }) {
   return (
     <>
-      <a
+      <div
         href={link}
         target='_blank'
         rel='noooper noreferrer'
@@ -27,7 +27,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
             ))}
           </p>
         </div>
-      </a>
+      </div>
     </>
   );
 }
