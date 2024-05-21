@@ -10,3 +10,4 @@ This portfolio project was developed using:
 
 ## Live Project
 You can view the live version of my portfolio here: 
+https://lombardioctavio.web.app/
