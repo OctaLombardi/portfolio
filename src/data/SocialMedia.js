@@ -22,7 +22,7 @@ const socialmedia = [
   {
     id: 4,
     title: 'CV',
-    link: '../data/OctavioLombardi-Resume.pdf',
+    link: '../../public/assets/Resume-OctavioLombardi.pdf',
     imgUrl: GrNotes,
   },
 ];

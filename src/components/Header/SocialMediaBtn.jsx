@@ -6,7 +6,7 @@ export default function SocialMediaButton({ Icon, link }) {
     if (link === '../data/OctavioLombardi-Resume.pdf') {
       const linkElement = document.createElement('a');
       linkElement.href = link;
-      linkElement.download = 'OctavioLombardi-Resume.pdf';
+      linkElement.download = 'Resume-OctavioLombardi.pdf';
       document.body.appendChild(linkElement);
       linkElement.click();
       document.body.removeChild(linkElement);

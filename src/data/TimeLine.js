@@ -39,6 +39,6 @@ export default [
     year: '2020',
     duration: 'The beginning',
     details:
-      'Started exploring coding out of curiosity and interest during the lockdown. Initial experiments involved building simple web pages to apply and reinforce newly acquired skills. Big change for someone who was persuing a medical degree.',
+      'Started exploring coding out of curiosity and interest during the lockdown. Initial projects involved building simple web pages to apply and reinforce newly acquired skills. Big change for someone who was persuing a medical degree.',
   },
 ];
