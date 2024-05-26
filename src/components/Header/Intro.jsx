@@ -2,7 +2,7 @@ import SocialMedia from './SocialMedia';
 function Intro() {
   return (
     <div className=' flex items-center justify-center flex-col text-center pt-20 pb-6'>
-      <img class='w-40' src='assets/profilepic.png' alt='avatar' />
+      <img className='w-40' src='assets/profilepic.png' alt='avatar' />
       <h1 className='text-3xl md:text-4xl dark:text-slate-200 mb-1 md:mb-3 font-serif font-bold'>
         Octavio Lombardi
       </h1>

@@ -13,11 +13,13 @@ function Contact() {
           <input
             type='text'
             placeholder='Name'
+            name='name'
             className='p-2 bg-white dark:bg-black border-2 rounded-md focus:outline-none'
           />
           <input
             type='text'
             placeholder='E-mail'
+            name='email'
             className=' bg-white dark:bg-black border-2 rounded-md  my-2 p-2 focus:outline-none'
           />
           <textarea
@@ -28,7 +30,7 @@ function Contact() {
           />
           <br />
           <button
-            type='button'
+            type='submit'
             className='text-center  inline-block px-3 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-500 to bg-green-500 drop-shadow-md transition duration-300 ease-in-out hover:scale-110'
           >
             Work With Me!

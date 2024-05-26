@@ -1,9 +1,19 @@
+import { useState } from 'react';
+import Title from '../ui/Title';
 import portfolio from '../../data/Portfolio';
 import PortfolioItem from './PortfolioItem';
-import Title from '../ui/Title';
-import ProjectModal from './projectDescription';
-
+import ProjectModal from './ProjectModal';
 function Portfolio() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <>
       <div className=''>
@@ -19,12 +29,18 @@ function Portfolio() {
                 imgUrl={project.imgUrl}
                 stack={project.stack}
                 link={project.link}
-                onClick={ProjectModal}
+                description={project.description}
+                onClick={() => handleOpenModal(project)}
               />
             ))}
           </div>
         </div>
       </div>
+      <ProjectModal
+        show={selectedProject !== null}
+        onClose={handleCloseModal}
+        project={selectedProject}
+      />
     </>
   );
 }
