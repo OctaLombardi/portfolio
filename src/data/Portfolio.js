@@ -11,7 +11,7 @@ export default [
       'React-router-dom',
       'Adobe Express',
     ],
-    link: '',
+    link: 'https://github.com/OctaLombardi/boladosclub',
     description:
       'I was responsible for the complete design, database management, and development of the site. This project involved creating a user-friendly and visually appealing website from scratch, ensuring robust backend functionality to support the clubs activities and services.',
   },
