@@ -6,24 +6,28 @@ const socialmedia = [
     title: 'Linkedin',
     imgUrl: FaLinkedinIn,
     link: 'https://www.linkedin.com/in/octavio-lombardi/',
+    isDownload: false,
   },
   {
     id: 2,
     title: 'GitHub',
     imgUrl: FaGithub,
     link: 'https://github.com/OctaLombardi',
+    isDownload: false,
   },
   {
     id: 3,
     title: 'Behance',
     imgUrl: FaBehance,
     link: 'https://www.behance.net/octaviolombardi',
+    isDownload: false,
   },
   {
     id: 4,
     title: 'CV',
-    link: '../../public/assets/Resume-OctavioLombardi.pdf',
     imgUrl: GrNotes,
+    link: '../../public/assets/Resume-OctavioLombardi.pdf',
+    isDownload: true,
   },
 ];
 export default socialmedia;

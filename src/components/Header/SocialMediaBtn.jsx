@@ -1,12 +1,12 @@
-export default function SocialMediaButton({ Icon, link }) {
+export default function SocialMediaButton({ Icon, link, isDownload }) {
   /**const handleClick = () => {
     window.open(link, '_blank');
   };**/
   const handleClick = () => {
-    if (link === '../data/OctavioLombardi-Resume.pdf') {
+    if (isDownload) {
       const linkElement = document.createElement('a');
       linkElement.href = link;
-      linkElement.download = 'Resume-OctavioLombardi.pdf';
+      linkElement.download = link.split('/').pop(); // Use the file name from the link or specify a custom name
       document.body.appendChild(linkElement);
       linkElement.click();
       document.body.removeChild(linkElement);
