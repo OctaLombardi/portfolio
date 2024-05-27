@@ -1,4 +1,4 @@
-function ProjectModal({ project, onClose }) {
+function ProjectModal({ project, onClose, link }) {
   const handleBackdropClick = (event) => {
     if (event.target === event.currentTarget) {
       onClose();
@@ -34,21 +34,14 @@ function ProjectModal({ project, onClose }) {
           ))}
         </p>
         <div className='flex justify-evenly mt-6 sm:flex sm:gap-4'>
-          <button
+          <a
             className='inline-block rounded-lg bg-blue-500 px-5 py-3 text-center text-sm font-semibold text-white sm:w-auto'
             href={project.link}
             target='_blank'
             rel='noopener noreferrer'
           >
             Link
-          </button>
-          <button
-            onClick={onClose}
-            className='text-black dark:text-white sm: hidden'
-            aria-label='Close modal'
-          >
-            ✖
-          </button>
+          </a>
         </div>
       </div>
     </div>
