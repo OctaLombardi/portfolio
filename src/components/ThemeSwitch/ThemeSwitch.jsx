@@ -10,7 +10,7 @@ function ThemeSwitch() {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-6 h-6'
+      className='w-6 h-6 text-black'
     >
       <path
         strokeLinecap='round'
@@ -71,7 +71,7 @@ function ThemeSwitch() {
       <button
         type='button'
         onClick={handleThemeSwitch}
-        className='absolute p-2 z-10 right-20 top-4 bg-blue-500 dark:bg-yellow-100 text-lg rounded-md'
+        className='absolute p-2 z-10 right-20 top-4 bg-blue-500 dark:bg-yellow-300 text-lg rounded-md'
       >
         {theme === 'dark' ? sun : moon}
       </button>
